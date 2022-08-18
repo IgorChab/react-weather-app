@@ -47,11 +47,6 @@ interface IList{
     wind: {speed: number, deg: number, gust: number}
 }
 
-// interface IError{
-//     cod: number;
-//     message: string;
-// }
-
 export interface WeatherState{
     currentData: IWeatherData | null;
     fiveDaysData: IFiveDaysWeather | null;
@@ -76,10 +71,6 @@ interface setErrorAction{
     payload: string;
 }
 
-// interface getFiveDaysWeatherAction{
-//     type: typeof GET_FIVE_DAYS_WEATHER;
-//     payload: IFiveDaysWeather
-// }
 
 export type weatherAction = getWeatherAction | setErrorAction | setLoadingAction
 
